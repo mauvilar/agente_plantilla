@@ -6,18 +6,28 @@ Esta es una plantilla en Python diseñada como punto de partida para construir a
 
 Esta plantilla va más allá de un simple chat: dota a Claude de capacidades reales sobre el sistema de archivos local mediante el uso de herramientas (*Tool Use* / *Function Calling*).
 
-## ✨ ¿Qué hace especial a este modelo base?
+## ✨ Plantillas Disponibles
 
-El agente base se comporta como un **asistente de gestión de documentos**. Puede analizar, razonar, generar y modificar archivos físicos en un solo flujo de trabajo ininterrumpido.
+Este repositorio incluye múltiples plantillas de agentes como punto de partida, dependiendo del caso de uso.
+
+### 1. 📄 Agente de Documentos (`agent.py`)
+
+El agente original que se comporta como un **asistente de gestión de documentos**. Puede analizar, razonar, generar y modificar archivos físicos en un solo flujo de trabajo ininterrumpido.
 
 Viene con dos herramientas pre-integradas:
-- 📖 `read_document`: Permite al asistente leer cualquier documento de texto, código fuente o Markdown que esté en tu computadora.
-- ✍️ `write_document`: Otorga al modelo la habilidad de redactar, guardar y sobrescribir archivos con la información nueva, estructurada o revisada.
+- 📖 `read_document`: Leer cualquier documento de texto o código en tu computadora.
+- ✍️ `write_document`: Redactar, guardar y sobrescribir archivos con nueva información.
 
-### ✅ Casos de uso ideales:
-- **Refactorización de código:** Pídele que lea un archivo de Python mal estructurado y que escriba una versión limpia en la misma ruta.
-- **Revisión de ortografía/estilo:** Haz que lea un texto denso y pida que reescriba el documento aplicando estilo corporativo.
-- **Data extraction:** Extrae resumen o insights de un documento voluminoso y pudes pedirle que lo escriba en un bonito formato *Markdown*.
+**Casos de uso:** Refactorización de código, corrección de estilo, y extracción o formateo de datos a Markdown.
+
+### 2. 🎙️ Agente Conversacional de Voz y Texto (`voice_text_agent.py`)
+
+Una variante orientada a la interacción con el usuario de manera directa y dinámica, simulando un asistente amigable usando respuestas activas tanto en texto como sintetizadas en audio.
+
+Viene con una herramienta pre-integrada:
+- 🔊 `text_to_speech`: Ejecuta síntesis de voz en el equipo físico (usando el comando macOS `say` por defecto) para que el asistente pueda "hablar" los resultados al usuario en tiempo real.
+
+**Casos de uso:** Asistentes interactivos de escritorio, simulación de atención por voz, o desarrollo de un chatbot amigable con síntesis vocal.
 
 ---
 
