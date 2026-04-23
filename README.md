@@ -1,8 +1,8 @@
-# 🤖 Agent Template con Anthropic API (Claude 3.5)
+# 🤖 Agent Template con Anthropic API (Claude 4.6)
 
 ¡Bienvenido a **Agent Template**! 🚀
 
-Esta es una plantilla en Python diseñada como punto de partida para construir agentes de inteligencia artificial avanzados y autónomos, impulsados por la API de Anthropic (Claude 3.5 Sonnet). 
+Esta es una plantilla en Python diseñada como punto de partida para construir agentes de inteligencia artificial avanzados y autónomos, impulsados por la API de Anthropic (Claude 4.6 Sonnet). 
 
 Esta plantilla va más allá de un simple chat: dota a Claude de capacidades reales sobre el sistema de archivos local mediante el uso de herramientas (*Tool Use* / *Function Calling*).
 

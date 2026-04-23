@@ -51,7 +51,7 @@ def process_tool_call(tool_name, tool_input):
         return f"Herramienta no reconocida: {tool_name}"
 
 def run_conversational_agent():
-    print("🎙️ Iniciando Agente Conversacional de Voz y Texto con Claude 3.5...")
+    print("🎙️ Iniciando Agente Conversacional de Voz y Texto con Claude 4.6...")
     print("Escribe tus mensajes. Escribe 'salir' para terminar la conversación.\n")
     
     messages = []
@@ -75,7 +75,7 @@ Asegúrate de ser empático y mantener el tono de una charla agradable."""
         
         try:
             response = client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-4-6-sonnet-latest",
                 max_tokens=1024,
                 system=system_prompt,
                 tools=tools,
@@ -117,7 +117,7 @@ Asegúrate de ser empático y mantener el tono de una charla agradable."""
             # Segunda llamada de confirmación si usó herramientas
             try:
                 final_response = client.messages.create(
-                    model="claude-3-5-sonnet-20241022",
+                    model="claude-4-6-sonnet-latest",
                     max_tokens=1024,
                     system=system_prompt,
                     tools=tools,

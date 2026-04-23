@@ -86,7 +86,7 @@ Tienes la habilidad de responder en formato texto, pero además cuentas con el u
     while True:
         try:
             response = client.messages.create(
-                model="claude-3-5-sonnet-20241022",
+                model="claude-4-6-sonnet-latest",
                 max_tokens=4096,
                 system=system_prompt,
                 tools=tools,
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         mensaje_inicial = " ".join(sys.argv[1:])
     else:
-        print("💡 Te doy la bienvenida al Agente Lector y Revisor de Documentos con Claude 3.5\n")
+        print("💡 Te doy la bienvenida al Agente Lector y Revisor de Documentos con Claude 4.6\n")
         mensaje_inicial = input("📝 ¿Qué necesitas que haga con los documentos?: ")
         if not mensaje_inicial.strip():
             print("Operación cancelada.")
